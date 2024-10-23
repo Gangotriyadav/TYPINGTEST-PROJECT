@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 800px; 
+  background-color: rgb(200, 205, 208);
+  padding: 40px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.container1, .container2 {
+  background-color: white;
+  width: 90%; 
+  max-width: 600px; 
+  padding: 20px;
+  border: 1px solid pink;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.c {
+  margin-bottom: 20px;
+}
+
+
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #ff9999;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1; 
+}
+
+.btn:hover {
+  background-color: #ff6666;
+}
+
+
+#timer {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.result {
+  background-color: white;
+  color: black;
+  border: 1px solid pink;
+  padding: 20px; 
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.result p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.success {
+  color: green;
+}
+
+.fail {
+  color: red;
+}
+
+.result {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    max-width: 90%; 
+  }
+
+  .container1, .container2 {
+    width: 90%; 
+    max-width: none;
+  }
+
+  .btn {
+    width:100%;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  #timer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .container1, .container2 {
+    width: 100%; 
+    padding: 15px; 
+  }
+
+  .btn {
+    padding: 10px;
+  }
+
+  #timer {
+    font-size: 18px;
+  }
+}

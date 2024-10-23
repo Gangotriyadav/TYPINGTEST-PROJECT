@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Check Your Typing Speed</h1>
+      <div id="quoteSection" class="container1"></div>
+      <textarea
+        id="userInput"
+        class="container2"
+        placeholder="Start typing here..."
+        disabled
+      ></textarea>
+      <div class="button-container">
+        <button id="startTest" class="btn">Start</button>
+        <button id="stopTest" class="btn">Stop</button>
+        <button id="resetTest" class="btn">Reset</button>
+        <button id="cheakSpeed" class="btn">cheak</button>
+      </div>
+      <p id="timer">60s</p>
+    </div>
+    <div class="result" style="display: none">
+      <p>WPM: <span id="wpm"></span></p>
+      <p>Mistakes: <span id="mistakes"></span></p>
+      <p>Accuracy: <span id="accuracy"></span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
